@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  background-image: url("bd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  min-height: 100vh; 
+  color: white;
+  overflow-x: hidden;
+}
+
+.main {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /
+  max-width: 1200px; 
+  margin: auto;
+  transform: translateY(10%); 
+  background-color: rgba(0, 0, 0, 0.864);
+  border-radius: 3rem;
+}
+
+.main header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.main header h2 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.main header p {
+  font-size: 2.4rem;
+}
+
+.main section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 2rem;
+  flex-wrap: wrap; 
+}
+
+.main section .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%; 
+  min-width: 250px; 
+}
+
+.main section .left .message {
+  margin-bottom: 3.2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffb800;
+}
+
+.main section .left .guess {
+  width: 70%; 
+  padding: 1.2rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0.8rem;
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main section .left .check,
+.main section .left .again {
+  width: 70%;
+  padding: 1.2rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main section .left .check {
+  background-color: #ffb800;
+}
+
+.main section .left .check:hover {
+  background-color: #8f6700;
+}
+
+.main section .left .again {
+  margin-top: 1.6rem;
+  background-color: #ff37b2;
+}
+
+.main section .left .again:hover {
+  background-color: #a20c68;
+}
+
+.main section .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  min-width: 250px;
+}
+
+.main section .right h1 {
+  margin-bottom: 3.2rem;
+  font-size: 4rem;
+  font-weight: bold;
+  background-color: #a20c68;
+  padding: 2.4rem;
+  width: 12rem;
+  text-align: center;
+  border-radius: 1.2rem;
+}
+
+.main section .right .text .status,
+.main section .right .text .score,
+.main section .right .text .highscore {
+  margin: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.main section .right .text .status span,
+.main section .right .text .score span,
+.main section .right .text .highscore span {
+  font-weight: normal;
+  color: #6cbaff;
+  font-weight: bold;
+}
+
+.main footer h3 {
+  margin-top: 5rem;
+  font-size: 3rem;
+  color: #ff37b2;
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%; 
+  }
+
+  .main {
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    border-radius: 0;
+    padding: 1.6rem;
+    transform: translateY(5%);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+  .main header h2 {
+    font-size: 3.2rem;
+  }
+
+  .main header p {
+    font-size: 2rem;
+  }
+
+  .main section {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .main section .left,
+  .main section .right {
+    width: 100%; 
+    margin-bottom: 2rem;
+  }
+
+  .main section .left .guess,
+  .main section .left .check,
+  .main section .left .again {
+    width: 80%; 
+  }
+
+  .main section .right h1 {
+    font-size: 3.2rem;
+    width: 10rem;
+    padding: 2rem;
+  }
+
+  .main footer h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .main {
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .main section .left .guess,
+  .main section .left .check,
+  .main section .left .again {
+    width: 90%;
+  }
+
+  .main section .right h1 {
+    font-size: 2.8rem;
+    width: 9rem;
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess The Number</title>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h2>Guess The Number</h2>
+        <p>Between 1 and 20</p>
+      </header>
+      <section>
+        <div class="left">
+          <p class="message">Start guessing ... 😎</p>
+          <input type="number" class="guess" placeholder="Guess a number" />
+          <button class="btn check">Check!</button>
+          <button class="btn again">Play Again</button>
+        </div>
+        <div class="right">
+          <h1 class="secNum">?</h1>
+          <div class="text">
+            <p class="status">Yor Status : <span>Ready</span></p>
+            <p class="score">Your tries : <span></span></p>
+            <p class="highscore span">High Score : <span>0</span></p>
+            <audio id="winSound" src="win.m4a"></audio>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <h3>Made By Mohamed</h3>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
